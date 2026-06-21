@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>All India Tour & Taxi | Your Trusted Travel Partner Across India</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+background:#f8f9fa;
+}
+
+header{
+background:#003366;
+color:white;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+}
+
+section{
+padding:70px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+color:#003366;
+}
+
+.booking-form{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.booking-form input,
+.booking-form select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.booking-form button{
+background:#003366;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card i{
+font-size:40px;
+color:#003366;
+margin-bottom:15px;
+}
+
+.fleet img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact{
+background:#003366;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+background:#001a33;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+
+<div class="logo">
+All India Tour & Taxi
+</div>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#fleet">Fleet</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>All India Tour & Taxi</h1>
+
+<p>Your Trusted Travel Partner Across India</p>
+
+<a href="#booking" class="btn">
+Book Now
+</a>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<div class="container">
+
+<h2 class="section-title">
+Quick Booking
+</h2>
+
+<form class="booking-form">
+
+<input type="text" placeholder="Pickup Location">
+
+<input type="text" placeholder="Drop Location">
+
+<input type="date">
+
+<select>
+<option>Select Vehicle</option>
+<option>Swift Dzire</option>
+<option>Ertiga</option>
+<option>Innova Crysta</option>
+<option>Tempo Traveller</option>
+</select>
+
+<button type="submit">
+Book Taxi
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-taxi"></i>
+<h3>One Way Taxi</h3>
+<p>Affordable one-way taxi services across India.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-route"></i>
+<h3>Round Trip</h3>
+<p>Comfortable round-trip journeys for families and businesses.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-plane"></i>
+<h3>Airport Transfer</h3>
+<p>Reliable airport pickup and drop services.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-briefcase"></i>
+<h3>Corporate Travel</h3>
+<p>Professional travel solutions for businesses.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="fleet" class="fleet">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Fleet
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<h3>Swift Dzire</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8">
+<h3>Ertiga</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+<h3>Innova Crysta</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1">
+<h3>Tempo Traveller</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="packages">
+
+<div class="container">
+
+<h2 class="section-title">
+Popular Tour Packages
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Rajasthan Tour</h3>
+<p>Jaipur, Jodhpur, Udaipur & Jaisalmer.</p>
+</div>
+
+<div class="card">
+<h3>Himachal Tour</h3>
+<p>Shimla, Manali & Dharamshala.</p>
+</div>
+
+<div class="card">
+<h3>Kashmir Tour</h3>
+<p>Srinagar, Gulmarg & Pahalgam.</p>
+</div>
+
+<div class="card">
+<h3>Golden Triangle</h3>
+<p>Delhi, Agra & Jaipur Tour.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+All India Tour & Taxi is a trusted travel company providing reliable taxi booking,
+airport transfers, outstation cab services, holiday tour packages, corporate travel
+solutions and comfortable transportation services across India.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<h2 class="section-title" style="color:white;">
+Contact Us
+</h2>
+
+<p><strong>Owner:</strong> Saleem Khan</p>
+
+<p><strong>Phone:</strong> +91 9812384534</p>
+<p><strong>Alternate:</strong> +91 7291926922</p>
+<p><strong>Alternate:</strong> +91 9557887780</p>  
+
+<p><strong>Email:</strong> salim24071993@gmail.com</p>
+  
+<p><strong>Service Area:</strong> Pan India</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 All India Tour & Taxi. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/919812384534" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
