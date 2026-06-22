@@ -318,7 +318,32 @@ height:250px;
 object-fit:cover;
 }
   
+/* Gallery Section */
+
+.gallery{
+    background:#f8f9fa;
 }
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+}  
 
 </style>
 
@@ -489,6 +514,41 @@ Our Services
     </div>
 
 </section>
+
+<section id="gallery" class="gallery">
+    <div class="container">
+
+        <h2 class="section-title">Our Vehicle Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/swift-dzire.jpg" alt="Swift Dzire">
+            <img src="images/swift-dzire-2.jpg" alt="Swift Dzire">
+            <img src="images/swift-dzire-3.jpg" alt="Swift Dzire">
+
+            <img src="images/ertiga.jpg" alt="Ertiga">
+
+            <img src="images/innova-1.jpg" alt="Innova Crysta">
+            <img src="images/innova-2.jpg" alt="Innova Crysta">
+            <img src="images/innova-3.jpg" alt="Innova Crysta">
+
+            <img src="images/wagonr-1.jpg" alt="Wagon R">
+            <img src="images/wagonr-2.jpg" alt="Wagon R">
+            <img src="images/wagonr-3.jpg" alt="Wagon R">
+
+            <img src="images/xcent-1.jpg" alt="Hyundai Xcent">
+            <img src="images/xcent-2.jpg" alt="Hyundai Xcent">
+            <img src="images/xcent-3.jpg" alt="Hyundai Xcent">
+
+            <img src="images/verna-1.jpg" alt="Hyundai Verna">
+            <img src="images/verna-2.jpg" alt="Hyundai Verna">
+            <img src="images/verna-3.jpg" alt="Hyundai Verna">
+            <img src="images/verna-4.jpg" alt="Hyundai Verna">
+
+        </div>
+
+    </div>
+</section>  
 
 <!-- Packages Section Start -->
 <section id="packages">
