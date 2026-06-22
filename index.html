@@ -253,6 +253,63 @@ justify-content:center;
 }
 
 }
+.owner-section{
+padding:80px 0;
+background:#ffffff;
+}
+
+.owner-card{
+display:flex;
+align-items:center;
+gap:40px;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.owner-image img{
+width:320px;
+border-radius:15px;
+object-fit:cover;
+}
+
+.owner-content h3{
+font-size:32px;
+color:#003366;
+margin-bottom:5px;
+}
+
+.owner-content span{
+display:block;
+color:#ff9800;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.owner-content p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+.owner-info p{
+margin:8px 0;
+}
+
+@media(max-width:768px){
+
+.owner-card{
+flex-direction:column;
+text-align:center;
+}
+
+.owner-image img{
+width:100%;
+max-width:300px;
+}
+
+}
+  
 </style>
 
 </head>
@@ -458,39 +515,52 @@ Popular Tour Packages
 <h2 class="section-title">
 About Us
 </h2>
+<section id="owner" class="owner-section">
+    <div class="container">
 
-<p style="text-align:center;max-width:900px;margin:auto;">
-All India Tour & Taxi is a trusted travel company providing reliable taxi booking,
-airport transfers, outstation cab services, holiday tour packages, corporate travel
-solutions and comfortable transportation services across India.
-</p>
+        <h2 class="section-title">Meet Our Founder</h2>
 
-</div>
+        <div class="owner-card">
 
+            <div class="owner-image">
+                <img src="images/owner.jpg" alt="Saleem Khan - Owner">
+            </div>
+
+            <div class="owner-content">
+                <h3>Saleem Khan</h3>
+                <span>Founder & Owner</span>
+
+                <p>
+                    Saleem Khan is the Founder and Owner of
+                    <strong>All India Tour & Taxi</strong>, a trusted travel
+                    and transportation company providing reliable taxi,
+                    airport transfer, corporate travel, and tour package
+                    services across India.
+                </p>
+
+                <p>
+                    With 15+ years of experience in the travel industry, he is
+                    committed to delivering safe, comfortable, affordable,
+                    and customer-focused transportation solutions. His vision
+                    is to make travel easier and more accessible for every
+                    customer across the country.
+                </p>
+
+                <div class="owner-info">
+                    <p><strong>Company:</strong> All India Tour & Taxi</p>
+                    <p><strong>Designation:</strong> Founder & Owner</p>
+                    <p><strong>Service Area:</strong> Pan India</p>
+                    <p><strong>Experience:</strong> Travel & Tourism Services</p>
+                    <p><strong>Email:</strong> salim24071993@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 9812384534</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </section>
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h2 class="section-title" style="color:white;">
-Contact Us
-</h2>
-
-<p><strong>Owner:</strong> Saleem Khan</p>
-
-<p><strong>Phone:</strong> +91 9812384534</p>
-<p><strong>Alternate:</strong> +91 7291926922</p>
-<p><strong>Alternate:</strong> +91 9557887780</p>  
-
-<p><strong>Email:</strong> salim24071993@gmail.com</p>
   
-<p><strong>Service Area:</strong> Pan India</p>
-
-</div>
-
-</section>
-
 <footer>
 
 <p>
