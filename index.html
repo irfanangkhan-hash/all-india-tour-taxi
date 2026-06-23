@@ -98,6 +98,42 @@ background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc
 background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600');
 }
 
+.slide:nth-child(4){
+background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600');
+}
+
+.slide:nth-child(5){
+background-image:url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600');
+}
+
+.slide:nth-child(6){
+background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+}
+
+.slide:nth-child(7){
+background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600');
+}
+
+.slide:nth-child(8){
+background-image:url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600');
+}
+
+.slide:nth-child(9){
+background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1600');
+}
+
+.slide:nth-child(10){
+background-image:url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=1600');
+}
+
+.slide:nth-child(11){
+background-image:url('https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?w=1600');
+}
+
+.slide:nth-child(12){
+background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600');
+}  
+
 .slide.active{
 opacity:1;
 }
@@ -397,8 +433,80 @@ object-fit:cover;
 <div class="slide">
     <div class="overlay">
         <h1>Explore Incredible India</h1>
-        <p>Tour Packages Across India</p>
+        <p>Premium Tour Packages Across India</p>
         <a href="#packages" class="btn">View Packages</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Outstation Taxi Service</h1>
+        <p>Comfortable Long Distance Travel</p>
+        <a href="#booking" class="btn">Book Taxi</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Corporate Travel Solutions</h1>
+        <p>Professional Business Transportation</p>
+        <a href="#contact" class="btn">Get Quote</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Luxury Car Rental</h1>
+        <p>Travel With Comfort & Style</p>
+        <a href="#fleet" class="btn">View Fleet</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Rajasthan Tour Package</h1>
+        <p>Discover Jaipur, Udaipur & Jaisalmer</p>
+        <a href="#packages" class="btn">Explore</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Himachal Holiday Tours</h1>
+        <p>Experience Mountains & Nature</p>
+        <a href="#packages" class="btn">Book Tour</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Kashmir Paradise Tour</h1>
+        <p>Enjoy The Beauty Of Heaven On Earth</p>
+        <a href="#packages" class="btn">View Details</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Golden Triangle Tour</h1>
+        <p>Delhi • Agra • Jaipur</p>
+        <a href="#packages" class="btn">Discover</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Family Vacation Packages</h1>
+        <p>Create Beautiful Travel Memories</p>
+        <a href="#packages" class="btn">Start Journey</a>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="overlay">
+        <h1>Travel Across India</h1>
+        <p>Safe, Reliable & Affordable Taxi Services</p>
+        <a href="#contact" class="btn">Contact Now</a>
     </div>
 </div>
 
@@ -479,8 +587,6 @@ Our Services
 </section>
 
 </section>  <!-- Services Section End -->
-
-<!-- YAHAN PASTE KARNA HAI -->
 
 <section id="fleet" class="fleet">
 
@@ -669,7 +775,7 @@ About Us
 <footer>
 
 <p>
-© 2026 All India Tour & Taxi. All Rights Reserved.
+© 2026 All India Tour & Taxi. All Rights Reserved. | Safe • Reliable • Affordable Travel Solutions Across India.
 </p>
 
 </footer>
@@ -683,18 +789,18 @@ let slides = document.querySelectorAll('.slide');
 let current = 0;
 
 function changeSlide(){
-slides[current].classList.remove('active');
+    slides[current].classList.remove('active');
 
-current++;
+    current++;
 
-if(current >= slides.length){
-current = 0;
+    if(current >= slides.length){
+        current = 0;
+    }
+
+    slides[current].classList.add('active');
 }
 
-slides[current].classList.add('active');
-}
-
-setInterval(changeSlide, 4000);
+setInterval(changeSlide, 5000);
 </script>
   
 </body>
