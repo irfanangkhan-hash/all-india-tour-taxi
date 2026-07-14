@@ -431,7 +431,121 @@ object-fit:cover;
 .gallery-grid img:hover{
     transform:scale(1.05);
 }
+/* ================= Reviews ================= */
 
+.reviews{
+padding:80px 0;
+background:#f8f9fa;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review-card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.review-card img{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.stars{
+font-size:22px;
+color:#FFD700;
+margin:10px 0;
+}
+
+/* ================= Statistics ================= */
+
+.stats{
+background:#003366;
+padding:80px 0;
+color:#fff;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat-box{
+text-align:center;
+}
+
+.stat-box h2{
+font-size:50px;
+color:#ff9800;
+}
+
+/* ================= Why Choose ================= */
+
+.why-us{
+padding:80px 0;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.why-grid div{
+background:#fff;
+padding:20px;
+border-left:5px solid #ff9800;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* ================= Google Map ================= */
+
+.location{
+padding:80px 0;
+}
+
+/* ================= Dashboard ================= */
+
+.booking-dashboard{
+padding:80px 0;
+}
+
+.booking-dashboard table{
+width:100%;
+border-collapse:collapse;
+}
+
+.booking-dashboard th{
+background:#003366;
+color:#fff;
+padding:15px;
+}
+
+.booking-dashboard td{
+padding:15px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.success{
+color:green;
+font-weight:bold;
+}
+
+.pending{
+color:#ff9800;
+font-weight:bold;
+}
 </style>
   
 </head>
@@ -763,6 +877,193 @@ Popular Tour Packages
 
 </section>
 
+<!-- ================= CUSTOMER REVIEWS ================= -->
+
+<section id="reviews" class="reviews">
+
+<div class="container">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<img src="images/customer1.jpg">
+<h3>Rahul Sharma</h3>
+<div class="stars">★★★★★</div>
+<p>Excellent taxi service. Professional driver and clean vehicle.</p>
+</div>
+
+<div class="review-card">
+<img src="images/customer2.jpg">
+<h3>Priya Verma</h3>
+<div class="stars">★★★★★</div>
+<p>Best airport pickup service. Highly recommended.</p>
+</div>
+
+<div class="review-card">
+<img src="images/customer3.jpg">
+<h3>Aman Khan</h3>
+<div class="stars">★★★★★</div>
+<p>Affordable pricing with outstanding customer support.</p>
+</div>
+
+<div class="review-card">
+<img src="images/customer1.jpg">
+<h3>Shubham Rai</h3>
+<div class="stars">★★★★★</div>
+<p>Marvellous taxi service. Professional staff and superb car.</p>
+</div>  
+
+<div class="review-card">
+<img src="images/customer1.jpg">
+<h3>Jai Chand</h3>
+<div class="stars">★★★★★</div>
+<p>Adorable cab service. Cooperative driver and neat & clean car.</p>
+</div>
+  
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h2>5000+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+<h2>150+</h2>
+<p>Cities Covered</p>
+</div>
+
+<div class="stat-box">
+<h2>90+</h2>
+<p>Professional Drivers</p>
+</div>
+
+<div class="stat-box">
+<h2>24×7</h2>
+<p>Customer Support</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+<div class="container">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="why-grid">
+
+<div>✔ Verified Drivers</div>
+<div>✔ GPS Enabled Vehicles</div>
+<div>✔ Sanitized Cars</div>
+<div>✔ Affordable Pricing</div>
+<div>✔ 24×7 Customer Support</div>
+<div>✔ Online Booking</div>
+<div>✔ Airport Pickup & Drop</div>
+<div>✔ Safe & Secure Travel</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section class="location">
+
+<div class="container">
+
+<h2 class="section-title">Our Location</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13845.840253126022!2d77.04806569931684!3d28.442547229784523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1861de9d7bb9%3A0xe403eb9336f57e45!2sUNITECH%20CYBER%20PARK%2C%20Durga%20Colony%2C%20Sector%2039%2C%20Gurugram%2C%20Haryana%20122003!5e1!3m2!1sen!2sin!4v1784060079722!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<br><br>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Unitech+Cyber+Park+Sector+39+Gurugram"
+target="_blank"
+class="btn">
+    <i class="fas fa-location-arrow"></i> Get Directions
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= BOOKING DASHBOARD ================= -->
+
+<section class="booking-dashboard">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Recent Bookings
+
+</h2>
+
+<table>
+
+<tr>
+<th>Booking ID</th>
+<th>Customer</th>
+<th>Vehicle</th>
+<th>Pickup</th>
+<th>Drop</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+
+<tr>
+
+<td>AIT001</td>
+<td>Rahul Sharma</td>
+<td>Swift Dzire</td>
+<td>Delhi</td>
+<td>Agra</td>
+<td>20 Jul 2026</td>
+<td><span class="success">Confirmed</span></td>
+
+</tr>
+
+<tr>
+
+<td>AIT002</td>
+<td>Priya Verma</td>
+<td>Ertiga</td>
+<td>Airport</td>
+<td>Noida</td>
+<td>21 Jul 2026</td>
+<td><span class="pending">Pending</span></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+  
 <section id="about">
 
 <div class="container">
@@ -808,6 +1109,7 @@ About Us
                     <p><strong>Experience:</strong> Travel & Tourism Services</p>
                     <p><strong>Email:</strong> salim24071993@gmail.com</p>
                     <p><strong>Phone:</strong> +91 9812384534</p>
+                    <p><strong>Office Address:</strong>Unitech cyber park sec39, Gurugram, Haryana, India</p>
                 </div>
             </div>
 
